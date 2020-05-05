@@ -1,0 +1,29 @@
+/*nav {*/
+/*  display: inline;*/
+/*}*/
+#logo{
+  float: left;
+  width: 10%;
+}
+#links{
+  float: left;
+  width: 40%;
+}
+
+.logo {
+  width: 92px;
+  height: 30px;
+  margin: 20px 50px;
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+ul {
+  margin-top: 25px;
+  list-style-type: none;
+}
+ul li {
+  display: inline;
+  margin: 5px 5px 5px 5px;
+}
