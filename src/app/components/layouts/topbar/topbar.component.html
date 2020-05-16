@@ -1,20 +1,46 @@
 <nav>
-  <div id="logo">
-    <img class="logo" src="../../../../assets/img/Logo.png" alt="logo">
-  </div>
-  <div id="links">
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Séries</a></li>
-      <li><a href="#">Filmes</a></li>
-      <li><a href="#">Mais recentes</a></li>
-      <li><a href="#">Minha lista</a></li>
-    </ul>
-  </div>
-  <div id="search">
-    <input type="text">
-  </div>
-  <div id="personal">
+  <mat-grid-list cols="6" rowHeight="4:1">
+    <mat-grid-tile>
+      <div id="logo">
+        <img class="logo" src="../../../../assets/img/Logo.png" alt="logo">
+      </div>
+    </mat-grid-tile>
+   <mat-grid-tile [colspan]="2">
+    <div id="links">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Séries</a></li>
+          <li><a href="#">Filmes</a></li>
+          <li><a href="#">Mais recentes</a></li>
+          <li><a href="#">Minha lista</a></li>
+        </ul>
+    </div>
+   </mat-grid-tile>
+    <mat-grid-tile  [colspan]="1">
+      <div id="search">
+        <button mat-icon-button>
+          <mat-icon class="search-icon">search</mat-icon>
+        </button>
+      </div>
+    </mat-grid-tile>
+   <mat-grid-tile [colspan]="2">
+    <div id="profile">
+          <a href="#">INFANTIL</a>
 
-  </div>
+          <button mat-icon-button>
+            <mat-icon style="color:aliceblue">card_giftcard</mat-icon>
+          </button>
+
+          <button mat-icon-button>
+            <mat-icon style="color:aliceblue">notifications</mat-icon>
+          </button>
+         
+          <div id="photo">
+          <button mat-button>
+            <img class="photo" src="../../../../assets/img/profile-flix.png" alt="profile">
+          </button>
+        </div>
+      </div>
+   </mat-grid-tile>
+  </mat-grid-list>  
 </nav>
